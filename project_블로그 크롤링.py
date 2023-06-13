@@ -59,11 +59,9 @@ for i in range(len(key_list)):
     c=[re.sub(r"[^ㄱ-ㅣ가-힣\s]", "", j) for j in c]
 
     d=a+c
-
     b.append(pd.DataFrame(d))
 
-    df=pd.DataFrame()
-
+df=pd.DataFrame()
 df['서울숙소']=b[0]; df['서울맛집']=b[1]; df['서울관광']=b[2];
 df['강원숙소']=b[3]; df['강원맛집']=b[4]; df['강원관광']=b[5]; 
 df['제주숙소']=b[6]; df['제주맛집']=b[7]; df['제주관광']=b[8];
